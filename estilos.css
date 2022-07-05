@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	background: black;
+}
+.header{
+	display: flex;
+	background: black;
+	opacity: 0.9;
+	padding: 20px;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	font-family: 'Bebas Neue';
+	border-bottom: 3px ridge white;
+	font-size: x-large;
+
+}
+.header h1{
+	color: white;
+}
+
+.biography{
+	width: 100%;
+	color: whitesmoke;
+	
+}
+.image-container{
+max-height: 70%;     
+max-width: 70%;
+float: right;
+ margin: 2%;
+ position: relative;
+ left: 0;
+}
+.image-container img{
+	max-height: 100%;     
+	max-width: 100%;
+ border-radius: 2% ;
+border: 3px ridge whitesmoke;
+	
+
+}
+.image-container figcaption{
+	padding-left: 5%;	
+	text-decoration-line: 2px underline darkgoldenrod;
+}
+.biography p{
+	padding: 2%;
+}
+.discografia{
+	margin-top: 30px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+text-align: center;
+color: whitesmoke;
+font-size: 17px;
+}
+.cards-container{
+	margin: 10vh 2.5vw;
+	height: 50vh;
+	grid-gap:30px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.discografia h2{
+	color: white;
+	font-family: sans-serif;
+
+}
+
+.cards-container__card-1{
+	background-image: url(https://i.scdn.co/image/ab67616d0000b273187abcc1004f4b5c889eeebc);
+	
+	border-radius: 7px;
+	background-position: center center;
+	background-size: cover;
+	border: 2px solid darkred;
+	background-repeat: no-repeat;
+	display: flex;
+	transition: 0.3s;
+
+}
+
+.cards-container__card-2{
+	background-image: url(https://tommyemmanuel.com/wp-content/uploads/2020/02/Heart-Songs-Album-Cover-scaled.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border: 2px solid darkred;
+	border-radius: 7px;
+	display: flex;
+	transition: 0.3s;
+
+
+}
+.cards-container__card-3 {
+	background-image: url(https://i.discogs.com/B6XPZSLQwhX-a1Kf-Xr-J4sQ2dXMJ9CoyRNIRHiKblw/rs:fit/g:sm/q:90/h:517/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDI0/MzQ2LTE1MjY3NzAy/NzMtNjkwMi5wbmc.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 7px;
+	border: 2px solid darkred;
+	display: flex;
+	transition: 0.4s;
+
+}
+.cards-container__card-4 {
+	background-image: url(https://tommyemmanuel.com/wp-content/uploads/2020/02/cd-determination.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 2px solid darkred;
+	border-radius: 7px;
+	display: flex;
+	transition: 0.6s;
+}
+
+
+.imglink{
+	height: 100%;
+	width: 100%;
+}
+
+.redes{
+	border-bottom: 2px solid whitesmoke;
+	min-height: 20vh;
+	max-width: 100%;
+	margin: 0px 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+}
+.redes h2{
+	color: white;
+	font-family: sans-serif;
+	margin-bottom: 8%;
+}
+.redes__ul{
+	width: 70%;
+display: flex;
+justify-content: space-between;
+
+}
+
+
+.redes__a{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	color: whitesmoke;
+	width: 5%;
+	min-height: 50px;
+	font-size: 20px;
+	margin-bottom: 5%;
+	transition: 0.3s;
+
+	
+	
+}
+.redes__a i{
+	font-size: 22px;
+	text-align: center;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 30px;
+	color: whitesmoke;
+}
+@media screen and (min-width: 600px){
+
+.cards-container__card-1:hover{
+	position: relative;
+	bottom: 15px;
+	opacity: 0.5;
+	height: 104%;
+}
+.cards-container__card-2:hover{
+	position: relative;
+	bottom: 15px;
+	opacity: 0.5;
+	height: 104%;
+}
+
+.cards-container__card-3:hover{
+	position: relative;
+	bottom: 15px;
+	opacity: 0.5;
+	height: 104%;
+}
+
+.cards-container__card-4:hover{
+	opacity: 0.5;
+	position: relative;
+	bottom: 15px;
+	height: 104%;
+}
+.redes__a:hover{
+	opacity: 0.2;
+}
+}
+
+@media screen and (max-width: 900px){
+.cards-container{
+	grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width: 600px){
+	.biography{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.image-container{
+		float: none;
+	}
+	.cards-container{
+		grid-template-columns: 1fr;
+		min-height: 100vh;
+	}
+	.redes__ul{
+		width: 100%;
+	}
+	.redes a{
+		font-size: 12px;
+	}
+
+};
